@@ -22,4 +22,58 @@ h1 {
     padding: 20px;
     box-shadow: 5px 5px 10px #0025;
     border-radius: 10px;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card__quote {
+    margin-top: 15px;
+}
+
+.paragraph {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.q {
+    width: 50px;
+    aspect-ratio: 1;
+}
+
+.q p {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    width: 0%;
+    height: 0%;
+    font-size: 100px;
+}
+
+.card__author {
+    margin-left: auto;
+    width: max-content;
+    font-style: italic;
+    padding-top: 20px;
+}
+
+.card span {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.card__btn {
+    display: block;
+    margin-left: auto;
+    color: white;
+    border-radius: 50%;
+    border: none;
+    width: 30px;
+    aspect-ratio: 1;
+    cursor: pointer;
+    transition: filter 100ms ease, transform 100ms ease;
+}
+
+.card__btn:hover {
+    filter: brightness(1.5);
+    transform: scale(1.05);
+    transition: filter 100ms ease, transform 100ms ease;
 }

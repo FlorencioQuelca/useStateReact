@@ -19,11 +19,16 @@ function App() {
   const chance={
     backgroundColor: randomColor
   }
+  const getRandomAll=()=>{
+    setRandomQuote(quotes[getIndexRandom(quotes)])
+    setRandomColor(colors[getIndexRandom(colors)])
+  }
   return (
     <div style={chance} className="App">
       <QuoteBox
         randomQuote={randomQuote}
-       
+        randomColor={randomColor}
+        getRandomAll={getRandomAll}
       />
     </div>
   )

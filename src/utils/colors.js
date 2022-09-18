@@ -1,4 +1,4 @@
-const colors = ['#FFFFFF',
+const colors = [
     '#C0C0C0',
     '#808080',
     '#000000',
@@ -15,4 +15,4 @@ const colors = ['#FFFFFF',
     '#FF00FF',
     '#800080',
 ]
-export default colors;
+export default colors

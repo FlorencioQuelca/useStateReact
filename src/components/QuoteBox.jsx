@@ -1,16 +1,26 @@
 import React from 'react'
+import QuoteText from './QuoteText'
 
-const QuoteBox = ({randomQuote}) => {
+const QuoteBox = ({randomQuote,randomColor,getRandomAll}) => {
     console.log(randomQuote)
+    console.log(randomColor)
+    console.log(getRandomAll)
     
-    const asd={
-        backgroundColor: 'red'
+    const color={
+        color: randomColor
     }
+    const background={
+        backgroundColor:randomColor
+    }
+    
   return (
-    <article className='card'>
-        <p className='card__quote'>{randomQuote.quote}</p>
-        <p className='card__author'>{randomQuote.author}</p>
-        <button className='card__button'>&#62</button>
+    <article style={color} className='card'>
+
+        <QuoteText
+           randomQuote={randomQuote}
+           randomColor={randomColor}
+         />
+        <button style={background}  onClick={getRandomAll} className='card__btn'>&#62;</button>
     </article>
   )
 }
